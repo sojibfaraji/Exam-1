@@ -1,0 +1,61 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?448ce2b6eb8095050ad1afc74274fd86") format("truetype"),
+url("./flaticon.woff?448ce2b6eb8095050ad1afc74274fd86") format("woff"),
+url("./flaticon.woff2?448ce2b6eb8095050ad1afc74274fd86") format("woff2"),
+url("./flaticon.eot?448ce2b6eb8095050ad1afc74274fd86#iefix") format("embedded-opentype"),
+url("./flaticon.svg?448ce2b6eb8095050ad1afc74274fd86#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "alarm-off": "\f101",
+    "left-arrow": "\f102",
+    "menu": "\f103",
+    "mail": "\f104",
+    "location": "\f105",
+    "bag": "\f106",
+    "play": "\f107",
+    "right-arrow": "\f108",
+    "bell": "\f109",
+);
+
+.flaticon-alarm-off:before {
+    content: map-get($flaticon-map, "alarm-off");
+}
+.flaticon-left-arrow:before {
+    content: map-get($flaticon-map, "left-arrow");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon-map, "menu");
+}
+.flaticon-mail:before {
+    content: map-get($flaticon-map, "mail");
+}
+.flaticon-location:before {
+    content: map-get($flaticon-map, "location");
+}
+.flaticon-bag:before {
+    content: map-get($flaticon-map, "bag");
+}
+.flaticon-play:before {
+    content: map-get($flaticon-map, "play");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-bell:before {
+    content: map-get($flaticon-map, "bell");
+}
